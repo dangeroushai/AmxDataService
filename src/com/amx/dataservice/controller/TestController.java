@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.amx.dataservice.model.qo.ProductQuery;
+import com.amx.dataservice.service.AreaService;
 import com.amx.dataservice.service.ProductService;
 
 @Controller
@@ -14,6 +15,8 @@ public class TestController extends BaseController{
 	
 	@Autowired
 	private ProductService Service;
+	@Autowired
+	private AreaService areaService;
 	
 	@ResponseBody
 	@RequestMapping()
@@ -43,6 +46,12 @@ public class TestController extends BaseController{
 		
 		return Service.findAllByQuery(query );
 		
+	}
+	
+	@ResponseBody
+	@RequestMapping("/area")
+	public Object testArea(){
+		return areaService.findAllByParentId(-1);
 	}
 
 }

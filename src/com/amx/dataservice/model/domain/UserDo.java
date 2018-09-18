@@ -205,6 +205,12 @@ public class UserDo {
     @Column(name="open_id")
     @Basic(fetch = FetchType.LAZY)
     private String openId;
+    
+    /**
+     * @邀请码.
+     */
+    @Column(name="invitation_code")
+    private String invitationCode; 
 
     public UserDo(){}
     
@@ -442,6 +448,14 @@ public class UserDo {
 
 	public void setOpenId(String openId) {
 		this.openId = openId;
+	}
+
+	public String getInvitationCode() {
+		return invitationCode;
+	}
+
+	public void setInvitationCode(String invitationCode) {
+		this.invitationCode = invitationCode;
 	} 
     
 }

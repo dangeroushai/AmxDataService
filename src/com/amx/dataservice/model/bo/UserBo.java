@@ -118,6 +118,8 @@ public class UserBo extends BaseBo<UserDo>{
     private Timestamp registTime;
 
 	private String openId;
+	
+	private String invitationCode; 
     
     public UserBo(){}
     
@@ -183,6 +185,14 @@ public class UserBo extends BaseBo<UserDo>{
 
 	public Integer getScore() {
 		return score;
+	}
+
+	public String getInvitationCode() {
+		return invitationCode;
+	}
+
+	public void setInvitationCode(String invitationCode) {
+		this.invitationCode = invitationCode;
 	}
 
 	public void setScore(Integer score) {
