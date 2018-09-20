@@ -122,7 +122,18 @@ public class HotelPackageDo {
      * @售卖状态.
      */
     @Column(name="sale_state")
-    private Integer saleState; 
+    private Integer saleState;
+    
+    /**
+     * @床型.
+     */
+    @Column(name="bed_type")
+    private String bedType;
+    /**
+     * @床数.
+     */
+    @Column(name="bed_num")
+    private Integer bedNum;
     
     /**
      * @库存.
@@ -288,5 +299,22 @@ public class HotelPackageDo {
 
 	public void setStock(Integer stock) {
 		this.stock = stock;
+	}
+
+	public String getBedType() {
+		return bedType;
+	}
+
+	public void setBedType(String bedType) {
+		this.bedType = bedType;
+	}
+
+	public Integer getBedNum() {
+		return bedNum;
+	}
+
+	public void setBedNum(Integer bedNum) {
+		this.bedNum = bedNum;
 	}     
+	
 }
