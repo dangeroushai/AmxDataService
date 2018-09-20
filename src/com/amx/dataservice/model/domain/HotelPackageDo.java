@@ -1,11 +1,4 @@
-/*
- * 文件名：Product_PackageBo.java
- * 版权：Copyright 2007-2017 517na Tech. Co. Ltd. All Rights Reserved.
- * 描述： Product_PackageBo.java
- * 修改人：leihaijun
- * 修改时间：Tue Mar 21 15:23:12 CST 2017
- * 修改内容：新增
- */
+
 package com.amx.dataservice.model.domain;
 
 import java.math.BigDecimal;
