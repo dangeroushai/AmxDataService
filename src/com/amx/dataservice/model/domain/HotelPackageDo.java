@@ -129,11 +129,6 @@ public class HotelPackageDo {
      */
     @Column(name="bed_type")
     private String bedType;
-    /**
-     * @床数.
-     */
-    @Column(name="bed_num")
-    private Integer bedNum;
     
     /**
      * @库存.
@@ -309,12 +304,5 @@ public class HotelPackageDo {
 		this.bedType = bedType;
 	}
 
-	public Integer getBedNum() {
-		return bedNum;
-	}
-
-	public void setBedNum(Integer bedNum) {
-		this.bedNum = bedNum;
-	}     
 	
 }
